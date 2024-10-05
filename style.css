@@ -1,38 +1,41 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    min-height: 100vh;
-    background: #111;
+body {
+  min-height: 100vh;
+  background: #111;
 }
 
-span{
-    position: absolute;
-    pointer-events: none;
-    animation: animate 1s linear infinite;
+span {
+  position: absolute;
+  pointer-events: none;
+  animation: animate 1s linear infinite;
 }
 
 @keyframes animate {
-    0%{
-        translate: 0 0;
-        opacity: 0;
-    }
-    10%{
-        opacity: 1;
-    }
+  0% {
+    translate: 0 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
 
-    30%{
-        translate: 0 100px;
-        opacity: 1;
-    }
-    90%{
-        opacity: 1;
-    }
-    100%{
-        translate: 0 10px;
-        opacity: 0;
-    }
+  30% {
+    translate: 0 10px;
+    opacity: 1;
+  }
+  60% {
+    translate: 0 50px;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    translate: 0 10px;
+    opacity: 0;
+  }
 }

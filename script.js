@@ -8,7 +8,7 @@ let images = [
   "🍎",
   "🍑",
   "🍒",
-  "🍓",
+  "🍓"
 ];
 
 document.addEventListener("mousemove", (e) => {
@@ -23,14 +23,14 @@ document.addEventListener("mousemove", (e) => {
   let icon = images[Math.floor(Math.random() * images.length)];
   emoji.innerText = icon;
 
-  let size = Math.random() * 50;
+  let size = Math.random() * 35;
   emoji.style.fontSize = 5 + size + "px";
 
   let max = 0;
   let min = 200;
   let randomValue = Math.floor((Math.random() * ((max + 1)) - min) + min);
 
-  emoji.style.transform = `translateX(${randomValue}px)`;
+  emoji.style.transform = `translateY(${randomValue}px)`;
   body.appendChild(emoji);
 
   setTimeout(()=>{
